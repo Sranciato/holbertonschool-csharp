@@ -1,0 +1,11 @@
+/mnt/c/Users/Steve/vscode-stuff/holbertonschool-csharp/0x00-csharp-hello_world/1-new_project/bin/Debug/netcoreapp2.1/1-new_project.deps.json
+/mnt/c/Users/Steve/vscode-stuff/holbertonschool-csharp/0x00-csharp-hello_world/1-new_project/bin/Debug/netcoreapp2.1/1-new_project.runtimeconfig.json
+/mnt/c/Users/Steve/vscode-stuff/holbertonschool-csharp/0x00-csharp-hello_world/1-new_project/bin/Debug/netcoreapp2.1/1-new_project.runtimeconfig.dev.json
+/mnt/c/Users/Steve/vscode-stuff/holbertonschool-csharp/0x00-csharp-hello_world/1-new_project/bin/Debug/netcoreapp2.1/1-new_project.dll
+/mnt/c/Users/Steve/vscode-stuff/holbertonschool-csharp/0x00-csharp-hello_world/1-new_project/bin/Debug/netcoreapp2.1/1-new_project.pdb
+/mnt/c/Users/Steve/vscode-stuff/holbertonschool-csharp/0x00-csharp-hello_world/1-new_project/obj/Debug/netcoreapp2.1/1-new_project.csprojAssemblyReference.cache
+/mnt/c/Users/Steve/vscode-stuff/holbertonschool-csharp/0x00-csharp-hello_world/1-new_project/obj/Debug/netcoreapp2.1/1-new_project.csproj.CoreCompileInputs.cache
+/mnt/c/Users/Steve/vscode-stuff/holbertonschool-csharp/0x00-csharp-hello_world/1-new_project/obj/Debug/netcoreapp2.1/1-new_project.AssemblyInfoInputs.cache
+/mnt/c/Users/Steve/vscode-stuff/holbertonschool-csharp/0x00-csharp-hello_world/1-new_project/obj/Debug/netcoreapp2.1/1-new_project.AssemblyInfo.cs
+/mnt/c/Users/Steve/vscode-stuff/holbertonschool-csharp/0x00-csharp-hello_world/1-new_project/obj/Debug/netcoreapp2.1/1-new_project.dll
+/mnt/c/Users/Steve/vscode-stuff/holbertonschool-csharp/0x00-csharp-hello_world/1-new_project/obj/Debug/netcoreapp2.1/1-new_project.pdb
