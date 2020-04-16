@@ -3,7 +3,7 @@ class Matrix
 {
     public static int[,] Square(int[,] myMatrix)
     {
-        int[,] newMatrix = new int[3,3];
+        int[,] newMatrix = new int[myMatrix.GetLength(0),myMatrix.GetLength(1)];
 
         for (int i = 0; i < 3; i++)
         {
