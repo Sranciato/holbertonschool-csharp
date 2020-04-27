@@ -29,7 +29,7 @@ class MyStack
         while (aStack.Pop() != search)
             ;
         
-        Console.WriteLine("Number of Items: " + count);
+        Console.WriteLine("Number of items: " + count);
         Console.WriteLine("Top item: " + topElem);
         if (!searchInList)
             Console.WriteLine("Stack contains \"" + search + "\": False");
