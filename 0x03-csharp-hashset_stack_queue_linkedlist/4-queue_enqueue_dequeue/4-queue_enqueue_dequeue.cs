@@ -14,7 +14,7 @@ class MyQueue
         }
         else
         {
-            Console.WriteLine("Top item: " + aQueue.Peek());
+            Console.WriteLine("First item: " + aQueue.Peek());
         }
         foreach (string item in aQueue)
         {
