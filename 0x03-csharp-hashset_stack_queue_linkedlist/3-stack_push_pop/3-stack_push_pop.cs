@@ -12,6 +12,7 @@ class MyStack
         if (aStack.Count < 1)
         {
             Console.WriteLine("Stack is empty");
+            return aStack;
         }
         else
         {
