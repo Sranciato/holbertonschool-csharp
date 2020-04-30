@@ -11,7 +11,10 @@ namespace Enemies
         /// public field health
         /// </summary>
         public int health;
-        string name = "(No Name)";
+        /// <summary>
+        /// private field for name
+        /// </summary>
+        string name = "(No name)";
         /// <summary>
         /// public constructor
         /// </summary>
