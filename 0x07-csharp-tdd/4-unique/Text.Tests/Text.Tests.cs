@@ -27,5 +27,26 @@ namespace Text.Tests
 
             Assert.AreNotEqual(9, Str.UniqueChar(s));
 		}
+        [Test]
+		public void Test4()
+		{
+			string s = "";
+
+            Assert.AreEqual(-1, Str.UniqueChar(s));
+		}
+        [Test]
+		public void Test5()
+		{
+			string s = null;
+
+            Assert.AreEqual(-1, Str.UniqueChar(s));
+		}
+        [Test]
+		public void Test6()
+		{
+			string s = "ba";
+
+            Assert.AreEqual(1, Str.UniqueChar(s));
+		}
     }
 }

@@ -9,6 +9,8 @@ namespace Text
         ///<summary>returns the max integer in a list of integers</summary>
         public static int UniqueChar(string s)
         {
+            if (s == "" || s == null)
+                return -1;
             for (int i = 1; i < s.Length; i++)
             {
                 if (s[i] != s[i - 1])
