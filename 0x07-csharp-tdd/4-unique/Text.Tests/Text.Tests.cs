@@ -3,9 +3,11 @@ using System.Collections.Generic;
 
 namespace Text.Tests
 {
+    ///<summary>tests for unique char</summary>
     [TestFixture]
     public class Tests
     {
+        ///<summary>tests for unique char</summary>
         [Test]
 		public void Test1()
 		{
@@ -13,6 +15,7 @@ namespace Text.Tests
 
             Assert.AreEqual(2, Str.UniqueChar(s));
 		}
+        ///<summary>tests for unique char</summary>
         [Test]
 		public void Test2()
 		{
@@ -20,6 +23,7 @@ namespace Text.Tests
 
             Assert.AreEqual(9, Str.UniqueChar(s));
 		}
+        ///<summary>tests for unique char</summary>
         [Test]
 		public void Test3()
 		{
@@ -27,6 +31,7 @@ namespace Text.Tests
 
             Assert.AreNotEqual(9, Str.UniqueChar(s));
 		}
+        ///<summary>tests for unique char</summary>
         [Test]
 		public void Test4()
 		{
@@ -34,6 +39,7 @@ namespace Text.Tests
 
             Assert.AreEqual(-1, Str.UniqueChar(s));
 		}
+        ///<summary>tests for unique char</summary>
         [Test]
 		public void Test5()
 		{
@@ -41,6 +47,7 @@ namespace Text.Tests
 
             Assert.AreEqual(-1, Str.UniqueChar(s));
 		}
+        ///<summary>tests for unique char</summary>
         [Test]
 		public void Test6()
 		{
@@ -48,6 +55,7 @@ namespace Text.Tests
 
             Assert.AreEqual(1, Str.UniqueChar(s));
 		}
+        ///<summary>tests for unique char</summary>
         [Test]
 		public void Test7()
 		{
@@ -55,6 +63,7 @@ namespace Text.Tests
 
             Assert.AreEqual(-1, Str.UniqueChar(s));
 		}
+        ///<summary>tests for unique char</summary>
         [Test]
 		public void Test8()
 		{
