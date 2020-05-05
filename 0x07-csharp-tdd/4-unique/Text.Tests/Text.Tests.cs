@@ -48,5 +48,19 @@ namespace Text.Tests
 
             Assert.AreEqual(1, Str.UniqueChar(s));
 		}
+        [Test]
+		public void Test7()
+		{
+			string s = "aaaaa";
+
+            Assert.AreEqual(-1, Str.UniqueChar(s));
+		}
+        [Test]
+		public void Test8()
+		{
+			string s = "bbbbfbbbb";
+
+            Assert.AreEqual(4, Str.UniqueChar(s));
+		}
     }
 }
