@@ -11,7 +11,7 @@ class MatrixMath
 
         if ((matrix1.GetLength(0) < 2 || matrix1.GetLength(0) > 3) || (matrix2.GetLength(0) < 2 || matrix2.GetLength(0) > 3))
             return new double[,] {{-1}};
-        if (matrix1.GetLength(0) != matrix2.GetLength(0))
+        if (matrix1.GetLength(0) != matrix1.GetLength(1) || matrix2.GetLength(0) != matrix2.GetLength(1))
             return new double[,] {{-1}};
 
         int len = matrix1.GetLength(0);
