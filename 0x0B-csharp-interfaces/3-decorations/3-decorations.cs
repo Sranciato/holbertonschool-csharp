@@ -61,29 +61,29 @@ class Decoration : Base, IInteractive, IBreakable
     {
         if (_durability <= 0)
             throw new Exception("Durability must be greater than 0");
-        name = _name;
-        durability = _durability;
-        isQuestItem = _isQuestItem;
+        this.name = _name;
+        this.durability = _durability;
+        this.isQuestItem = _isQuestItem;
     }
 
     public void Interact()
     {
         if (durability <= 0)
-            Console.WriteLine("The " + name + " has been broken.");
+            Console.WriteLine("The " + this.name + " has been broken.");
         else if (isQuestItem)
-            Console.WriteLine("You look at the " + name + ". There's a key inside.");
+            Console.WriteLine("You look at the " + this.name + ". There's a key inside.");
         else
-            Console.WriteLine("You look at the " + name + ". Not much to see here.");
+            Console.WriteLine("You look at the " + this.name + ". Not much to see here.");
     }
 
     public void Break()
     {
         durability -= 1;
         if (durability > 0)
-            Console.WriteLine("You hit the " + name + ". It cracks.");
+            Console.WriteLine("You hit the " + this.name + ". It cracks.");
         else if (durability == 0)
-            Console.WriteLine("You smash the " + name + ". What a mess.");
+            Console.WriteLine("You smash the " + this.name + ". What a mess.");
         else
-            Console.WriteLine("The " + name + " is already broken.");
+            Console.WriteLine("The " + this.name + " is already broken.");
     }
 }
