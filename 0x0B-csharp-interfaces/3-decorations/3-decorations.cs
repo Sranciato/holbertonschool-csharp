@@ -59,7 +59,7 @@ class Decoration : Base, IInteractive, IBreakable
     ///<summary>Decoration constructor</summary>
     public Decoration(string _name = "Decoration", int _durability = 1, bool _isQuestItem = false)
     {
-        if (durability < 0)
+        if (_durability < 0)
             throw new Exception("Durability must be greater than 0");
         name = _name;
         durability = _durability;
@@ -72,7 +72,7 @@ class Decoration : Base, IInteractive, IBreakable
             Console.WriteLine("The " + name + " has been broken.");
         else if (isQuestItem)
             Console.WriteLine("You look at the " + name + ". There's a key inside.");
-        else if (!isQuestItem)
+        else
             Console.WriteLine("You look at the " + name + ". Not much to see here.");
     }
 
