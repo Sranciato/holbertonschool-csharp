@@ -38,7 +38,7 @@ public class Player
             Console.WriteLine(this.name + " takes 0 damage!");
         else
             Console.WriteLine(this.name + " takes " + damage + " damage!");
-        ValidateHP(this.hp - damage);
+        this.ValidateHP(this.hp - damage);
     }
 
     ///<summary>heal damage method</summary>
@@ -48,7 +48,7 @@ public class Player
             Console.WriteLine(this.name + " heals 0 HP!");
         else
             Console.WriteLine(this.name + " heals " + heal + " HP!");
-        ValidateHP(this.hp + heal);
+        this.ValidateHP(this.hp + heal);
     }
 
     ///<summary>Validate hp method</summary>
