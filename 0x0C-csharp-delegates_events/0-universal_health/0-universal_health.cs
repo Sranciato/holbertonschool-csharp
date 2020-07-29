@@ -3,9 +3,9 @@
 ///<summary>Player class</summary>
 public class Player
 {
-    string name;
-    float maxHp;
-    float hp;
+    private string name;
+    private float maxHp;
+    private float hp;
 
     ///<summary>Constructor</summary>
     public Player(string name = "Player", float maxHp = 100f)
@@ -26,6 +26,6 @@ public class Player
     ///<summary>Print health of player method</summary>
     public void PrintHealth()
     {
-        Console.WriteLine(this.name + " has " + this.hp + " / " + this.maxHp + " health.");
+        Console.WriteLine(this.name + " has " + this.hp + " / " + this.maxHp + " health");
     }
 }
