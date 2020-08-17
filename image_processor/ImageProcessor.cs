@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 
-///<summary>ImpageProcessor class</summary>
+///<summary>ImageProcessor class</summary>
 class ImageProcessor
 {
     ///<summary>Method for inversing pixel color for images</summary>
@@ -24,6 +24,31 @@ class ImageProcessor
                 }
             }
             string concatFile = file.Substring(7, file.Length - 11) + "_inverse." + file.Substring(file.Length - 3, 3);
+            image1.Save(concatFile);
+            
+        }
+    }
+
+    ///<summary>Method for converting images to grayscale</summary>
+    public static void Grayscale(string[] filenames)
+    {
+        foreach (string file in filenames)
+        {
+            Bitmap image1 = new Bitmap(file);
+
+            int x, y;
+
+            for(x = 0; x < image1.Width; x++)
+            {
+                for(y = 0; y < image1.Height; y++)
+                {
+                    Color pixelColor = image1.GetPixel(x, y);
+                    int grayScale = (int)((pixelColor.R * 0.3) + (pixelColor.G * 0.59) + (pixelColor.B * 0.11));
+                    Color newColor = Color.FromArgb(pixelColor.A, grayScale, grayScale, grayScale);
+                    image1.SetPixel(x, y, newColor);
+                }
+            }
+            string concatFile = file.Substring(7, file.Length - 11) + "_grayscale." + file.Substring(file.Length - 3, 3);
             image1.Save(concatFile);
             
         }
