@@ -23,7 +23,9 @@ class ImageProcessor
                     image1.SetPixel(x, y, newColor);
                 }
             }
-            string concatFile = file.Substring(7, file.Length - 11) + "_inverse." + file.Substring(file.Length - 3, 3);
+            string name = file.Split("/")[1];
+            string[] newName = name.Split(".");
+            string concatFile = newName[0] + "_inverse." + newName[1];
             image1.Save(concatFile);
             
         }
@@ -48,7 +50,9 @@ class ImageProcessor
                     image1.SetPixel(x, y, newColor);
                 }
             }
-            string concatFile = file.Substring(7, file.Length - 11) + "_grayscale." + file.Substring(file.Length - 3, 3);
+            string name = file.Split("/")[1];
+            string[] newName = name.Split(".");
+            string concatFile = newName[0] + "_grayscale." + newName[1];
             image1.Save(concatFile);
             
         }
