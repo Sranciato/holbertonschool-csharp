@@ -23,10 +23,13 @@ class ImageProcessor
                     image1.SetPixel(x, y, newColor);
                 }
             }
-            string name = file.Split("/")[1];
-            string[] newName = name.Split(".");
-            string concatFile = newName[0] + "_inverse." + newName[1];
-            image1.Save(concatFile);
+            string[] split = file.Split('.', '/');
+			string newFilename = split[split.Length - 2] + "_inverse." + split[split.Length - 1];
+			image1.Save(newFilename);
+            // string name = file.Split("/")[1];
+            // string[] newName = name.Split(".");
+            // string concatFile = newName[0] + "_inverse." + newName[1];
+            // image1.Save(concatFile);
             
         }
     }
