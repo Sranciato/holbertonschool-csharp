@@ -57,4 +57,42 @@ class ImageProcessor
             
         }
     }
+
+    ///<summary>Method for converting images to grayscale</summary>
+    public static void BlackWhite(string[] filenames, double threshold)
+    {
+        foreach (string file in filenames)
+        {
+            Bitmap image1 = new Bitmap(file);
+            Color newColor;
+
+            int x, y;
+
+            for(x = 0; x < image1.Width; x++)
+            {
+                for(y = 0; y < image1.Height; y++)
+                {
+                    Color pixelColor = image1.GetPixel(x, y);
+                    if (GetBrightness(pixelColor) >= threshold)
+                    {
+                        newColor = Color.FromArgb(pixelColor.A, 255, 255, 255);
+                    }
+                    else
+                    {
+                        newColor = Color.FromArgb(pixelColor.A, 0, 0, 0);
+                    }
+                    image1.SetPixel(x, y, newColor);
+                }
+            }
+            string name = file.Split("/")[1];
+            string[] newName = name.Split(".");
+            string concatFile = newName[0] + "_bw." + newName[1];
+            image1.Save(concatFile);
+            
+        }
+    }
+    public static double GetBrightness(Color color)
+    {
+        return (0.2126*color.R + 0.7152*color.G + 0.0722*color.B);
+    }
 }
