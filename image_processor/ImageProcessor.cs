@@ -11,7 +11,7 @@ class ImageProcessor
     {
         foreach (string file in filenames)
         {
-            Bitmap image1 = (Bitmap) Image.FromFile(file);
+            Bitmap image1 = new Bitmap(file);
 
             int x, y;
 
@@ -20,7 +20,7 @@ class ImageProcessor
                 for(y = 0; y < image1.Height; y++)
                 {
                     Color pixelColor = image1.GetPixel(x, y);
-                    Color newColor = Color.FromArgb(255, (255 - pixelColor.R), (255 - pixelColor.G), (255 - pixelColor.B));
+                    Color newColor = Color.FromArgb(255 - pixelColor.R, 255 - pixelColor.G, 255 - pixelColor.B);
                     image1.SetPixel(x, y, newColor);
                 }
             }
@@ -92,6 +92,7 @@ class ImageProcessor
             
         }
     }
+    ///<summary>Method for getting the brightness value to compare against threshold</summary>
     public static double GetBrightness(Color color)
     {
         return (0.2126*color.R + 0.7152*color.G + 0.0722*color.B);
