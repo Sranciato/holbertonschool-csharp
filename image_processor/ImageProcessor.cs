@@ -95,4 +95,20 @@ class ImageProcessor
     {
         return (0.2126*color.R + 0.7152*color.G + 0.0722*color.B);
     }
+
+    ///<summary>Method for converting images to grayscale</summary>
+    public static void Thumbnail(string[] filenames, int height)
+    {
+        foreach (string file in filenames)
+        {
+            Image image = Image.FromFile(file);
+            int aspect = image.Height / height;
+            Image thumb = image.GetThumbnailImage(image.Width / aspect , height, ()=>false, IntPtr.Zero);
+
+            string name = file.Split("/")[1];
+            string[] newName = name.Split(".");
+            string concatFile = newName[0] + "_th." + newName[1];
+            thumb.Save(concatFile);
+        }
+    }
 }

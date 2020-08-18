@@ -12,6 +12,6 @@ class Program
         else
             filenames = Directory.GetFiles("images/", "*.jpg");
 
-        ImageProcessor.BlackWhite(filenames, 100);
+        ImageProcessor.Thumbnail(filenames, 100);
     }
 }
